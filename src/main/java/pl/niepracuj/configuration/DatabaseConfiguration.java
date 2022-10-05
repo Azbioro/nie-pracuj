@@ -47,7 +47,7 @@ public class DatabaseConfiguration {
     }
 
     @Bean //konfiguracja logowania do bazy danych
-    public LocalContainerEntityManagerFactoryBean getEntityManager() {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(getDataSource());
         entityManagerFactoryBean.setPackagesToScan(packages); //dodane pakiety do skanowania, żeby wiedział co ma skanować - eliminacja błędu
