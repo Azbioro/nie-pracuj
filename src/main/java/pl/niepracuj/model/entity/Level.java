@@ -1,16 +1,16 @@
 package pl.niepracuj.model.entity;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
 @Setter
+@Builder
 @Table(name = "levels")
 @NoArgsConstructor
+@AllArgsConstructor
 public class Level {
 
     @Id

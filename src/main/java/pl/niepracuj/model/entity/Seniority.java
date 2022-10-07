@@ -1,8 +1,6 @@
 package pl.niepracuj.model.entity;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import pl.niepracuj.model.enums.SeniorityEnum;
 
 import javax.persistence.*;
@@ -10,8 +8,10 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
+@Builder
 @Table(name = "seniorities")
 @NoArgsConstructor
+@AllArgsConstructor
 public class Seniority {
 
     @Id
